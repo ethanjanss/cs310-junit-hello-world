@@ -1,5 +1,6 @@
 package edu.jsu.mcis.cs310;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,7 +18,9 @@ public class Main {
     }
     
     public String reverse(String message) {
-        return message;
+        StringBuilder s = new StringBuilder(message);
+        s.reverse();
+        return s.toString();
     }
     
 }
